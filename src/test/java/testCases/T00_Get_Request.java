@@ -19,7 +19,7 @@ public class T00_Get_Request extends BaseTest {
 		// request object
 		RequestSpecification httpRequest = RestAssured.given();
 
-		Response response = httpRequest.request(Method.GET, "/new/?jokers_enabled=true");
+		Response response = httpRequest.request(Method.GET, "/new");
 
 		String responBody = response.getBody().asString();
 		System.out.println("Response Body is : " + responBody);
